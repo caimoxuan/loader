@@ -1,4 +1,4 @@
-package com.cmx.worktest;
+package com.cmx.loader;
 
 public class FileInfo {
 

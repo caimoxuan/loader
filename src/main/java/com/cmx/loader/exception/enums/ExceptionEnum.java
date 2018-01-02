@@ -1,4 +1,4 @@
-package com.cmx.worktest.exception.enums;
+package com.cmx.loader.exception.enums;
 
 public enum ExceptionEnum {
 

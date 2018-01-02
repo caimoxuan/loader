@@ -1,12 +1,9 @@
-package com.cmx.worktest.shiro.matcher;
+package com.cmx.loader.shiro.matcher;
 
-import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.credential.CredentialsMatcher;
 import org.springframework.beans.factory.annotation.Value;
-
-import java.security.Security;
 
 public class FileUploadCredentialMatcher implements CredentialsMatcher {
 
@@ -24,7 +21,7 @@ public class FileUploadCredentialMatcher implements CredentialsMatcher {
         String userName = authenticationInfo.getPrincipals().toString();
         String passWord = authenticationInfo.getCredentials().toString();
 
-        
+
         if(username.equals(userName) || password.equals(passWord)){
             System.out.println("密码正确");
             return true;

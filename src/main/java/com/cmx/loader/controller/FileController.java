@@ -1,9 +1,9 @@
-package com.cmx.worktest.controller;
+package com.cmx.loader.controller;
 
 
-import com.cmx.worktest.FileInfo;
-import com.cmx.worktest.manager.FileManager;
-import com.cmx.worktest.util.SystemUtil;
+import com.cmx.loader.FileInfo;
+import com.cmx.loader.manager.FileManager;
+import com.cmx.loader.util.SystemUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -12,11 +12,9 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
-import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URLEncoder;
 import java.util.List;

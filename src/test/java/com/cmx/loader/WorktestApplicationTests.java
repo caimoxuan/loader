@@ -1,4 +1,4 @@
-package com.cmx.worktest;
+package com.cmx.loader;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

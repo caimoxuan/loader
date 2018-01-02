@@ -1,6 +1,5 @@
-package com.cmx.worktest.exception;
+package com.cmx.loader.exception;
 
-import com.cmx.worktest.exception.enums.ExceptionEnum;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.ModelAndView;

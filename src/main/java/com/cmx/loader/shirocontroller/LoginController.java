@@ -1,4 +1,4 @@
-package com.cmx.worktest.shirocontroller;
+package com.cmx.loader.shirocontroller;
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;

@@ -1,7 +1,7 @@
-package com.cmx.worktest.manager;
+package com.cmx.loader.manager;
 
 
-import com.cmx.worktest.FileInfo;
+import com.cmx.loader.FileInfo;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.ServletOutputStream;

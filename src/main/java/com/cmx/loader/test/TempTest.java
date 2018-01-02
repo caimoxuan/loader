@@ -1,8 +1,4 @@
-package com.cmx.worktest.test;
-
-import com.cmx.worktest.exception.enums.ExceptionEnum;
-
-import java.io.File;
+package com.cmx.loader.test;
 
 public class TempTest {
 

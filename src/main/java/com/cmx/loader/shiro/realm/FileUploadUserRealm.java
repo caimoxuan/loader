@@ -1,4 +1,4 @@
-package com.cmx.worktest.shiro.realm;
+package com.cmx.loader.shiro.realm;
 
 
 import org.apache.shiro.authc.*;

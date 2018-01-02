@@ -1,8 +1,8 @@
-package com.cmx.worktest.config;
+package com.cmx.loader.config;
 
 
-import com.cmx.worktest.shiro.matcher.FileUploadCredentialMatcher;
-import com.cmx.worktest.shiro.realm.FileUploadUserRealm;
+import com.cmx.loader.shiro.matcher.FileUploadCredentialMatcher;
+import com.cmx.loader.shiro.realm.FileUploadUserRealm;
 import org.apache.shiro.cache.ehcache.EhCacheManager;
 import org.apache.shiro.mgt.DefaultSecurityManager;
 import org.apache.shiro.realm.Realm;
