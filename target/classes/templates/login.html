@@ -1,0 +1,36 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type = "text/javascript" th:src = "@{/js/jquery-3.2.1.min.js}"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/style/css/normalize.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/style/css/demo.css}" />
+    <link rel = "stylesheet" type = "text/css" th:href = "@{/style/css/component.css}" />
+</head>
+<body>
+<div class="container demo-1">
+    <div class="content">
+        <div id="large-header" class="large-header">
+            <canvas id="demo-canvas"></canvas>
+            <div class="logo_box">
+
+                <form action="" name="f" method="post" id = "login_form">
+                    <div class="input_outer">
+                        <span class="u_user"></span>
+                        <input name="username" id = "username" class="text" style="color: #FFFFFF !important" type="text" placeholder="请输入账户">
+                    </div>
+                    <div class="input_outer">
+                        <span class="us_uer"></span>
+                        <input name="password" class="text" id = "password" style="color: #FFFFFF !important; position:absolute; z-index:100;"value="" type="password" placeholder="请输入密码">
+                    </div>
+                    <div class="mb2"><input class="act-but submit"  style="color: #FFFFFF" type = "submit" value = "登陆"/></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div><!-- /container -->
+<script th:src="@{/style/js/TweenLite.min.js}"></script>
+<script th:src="@{/style/js/EasePack.min.js}"></script>
+<script th:src="@{/style/js/rAF.js}"></script>
+<script th:src="@{/style/js/demo-1.js}"></script>
+</body>
+</html>

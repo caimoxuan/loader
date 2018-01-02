@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+   <style>
+       .driver{
+           width : 150px;
+           height : 150px;
+           background: url(/img/drive.png) no-repeat;
+           -webkit-background-size: cover;
+           background-size: cover;
+           float : left;
+           margin : 10px 40px;
+           text-align: center;
+           cursor: pointer;
+       }
+       .driver a{
+           position: relative;
+           top: 140px;
+           text-decoration : none;
+       }
+
+   </style>
+    <title>根目录</title>
+</head>
+<body>
+    <div th:each="root : ${roots}" class = "driver">
+        <a th:href="'/operatorFile/showFile?path=' + ${root}" th:text="${root.split(':')[0]}"></a>
+    </div>
+<script th:src="@{/js/jquery-3.2.1.min.js}"></script>
+<script type="text/javascript">
+    $(function(){
+       $(".driver").bind("dblclick", function(){
+            var a = $(this).find("a")[0];
+            a.click();
+       })
+    });
+</script>
+</body>
+</html>

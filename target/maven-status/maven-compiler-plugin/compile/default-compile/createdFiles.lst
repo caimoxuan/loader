@@ -1,0 +1,6 @@
+com\cmx\worktest\config\ShiroConfig.class
+com\cmx\worktest\shiro\matcher\FileUploadCredentialMatcher.class
+com\cmx\worktest\shiro\realm\FileUploadUserRealm.class
+com\cmx\worktest\controller\FileController.class
+com\cmx\worktest\WorktestApplication.class
+com\cmx\worktest\shirocontroller\LoginController.class

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>上传成功</title>
+</head>
+<body>
+
+<div>上传成功, 网页将在 <b id = "second">5</b> 秒后返回 <a href = "#" onclick = "back();">立即返回</a></div>
+
+</body>
+<script>
+
+    window.onload = function(){
+        var clock = document.getElementById("second");
+        var cl = setInterval(function(){
+            clock.innerText = clock.innerText - 1;
+            if(clock.innerText.toString() == "0"){
+                console.log("1");
+                window.location.href = document.referrer;
+                clearInterval(cl);
+            }
+        }, 1000);
+    }
+
+    function back(){
+        window.location.href = document.referrer;
+    }
+
+</script>
+</html>

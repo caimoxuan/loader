@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>上传文件</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/basic.min.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/dropzone.min.css}" />
+</head>
+<body>
+
+    <div id="div-dropzone">
+        <form action="/operatorFile/uploadFile" class="dropzone" enctype="multipart/form-data">
+            <div class="fallback">
+                <input name="file" type="file" multiple/>
+            </div>
+        <input type="text" name = "path" />
+        </form>
+    </div>
+
+<script th:src="@{/js/dropzone.js}" type="text/javascript"></script>
+
+</body>
+<script>
+</script>
+</html>
